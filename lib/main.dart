@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'implicit_examples/animated_color_palette.dart';
+import 'implicit_examples/animated_shopping_cart.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,13 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Animation Practice',
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AnimatedColorPalette(),
+      home: ShoppingCartButton(),
     );
   }
 }
