@@ -5,7 +5,6 @@ class PulsatingCircleAnimation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     double size = 200;
 
     return Scaffold(
@@ -32,9 +31,14 @@ class PulsatingCircleAnimation extends StatelessWidget {
                   ),
                 ],
               ),
+              // child: Text(widget.toString()),
+              child: widget,
             );
           },
-
+          child: Text(
+            "Hello World",
+            style: TextStyle(color: Colors.black),
+          ),
         ),
       ),
     );

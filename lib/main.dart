@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'explicit_animations/login_animations.dart';
 import 'implicit_examples/animated_color_palette.dart';
 import 'implicit_examples/animated_shopping_cart.dart';
 import 'implicit_examples/animated_tween_animation.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PulsatingCircleAnimation(),
+      home: LoginAnimations(),
     );
   }
 }
