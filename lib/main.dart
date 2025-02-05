@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/explicit_animations/loading_animation.dart';
 
 import 'explicit_animations/list_animations.dart';
 import 'explicit_animations/login_animations.dart';
@@ -23,8 +24,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ListAnimations(),
+      // home: ListAnimations(),
+      home: RadialProgressIndicator(
+        progress: 0.65,
+        color: Colors.blue,
+      ),
     );
   }
 }
-
