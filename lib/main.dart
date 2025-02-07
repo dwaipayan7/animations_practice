@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/explicit_animations/loading_animation.dart';
 import 'package:untitled/page_route_builder/splash_animation.dart';
 
+import 'custom_painter_animation/bouncing_ball_animation.dart';
 import 'explicit_animations/list_animations.dart';
 import 'explicit_animations/login_animations.dart';
 import 'implicit_examples/animated_color_palette.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       //   progress: 0.65,
       //   color: Colors.blue,
       // ),
-      home: SplashAnimation(),
+      home: BouncingBallAnimation(),
     );
   }
 }

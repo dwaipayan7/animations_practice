@@ -25,7 +25,6 @@ class _SplashAnimationState extends State<SplashAnimation>
 
     controller.addListener(() {
       if (controller.isCompleted) {
-        // ✅ Properly using MyCustomRouteTransition
         Navigator.push(
           context,
           MyCustomRouteTransition(route: const Destination()),
@@ -65,7 +64,7 @@ class _SplashAnimationState extends State<SplashAnimation>
   }
 }
 
-// ✅ Custom Page Route with Slide Transition
+
 class MyCustomRouteTransition extends PageRouteBuilder {
   final Widget route;
 
